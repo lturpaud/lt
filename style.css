@@ -9,7 +9,11 @@ div.head {
   width: 100%;
 }
 
-  
+.title {
+  background-color: rgba(0,0,0,0);
+  z-index: 1;
+  color: black; 
+}
 
 
 Attachments area

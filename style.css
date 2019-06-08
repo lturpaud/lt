@@ -14,13 +14,24 @@ body {
   background-color: rgba(255,255,255,1);
 )
 
-.menu:hover #selection {
-  display:block;
+.q {
+  /*display: none;*/
+  position:absolute;
+  top: 78px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
-.selection {
-  
-}
+/*.menu:hover + selection {
+  display: none;
+  position:absolute;
+  top: 78px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display:block;
+}*/
 
 .menu {
   background-image:url(img/menu.png);

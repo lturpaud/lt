@@ -1,32 +1,32 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>anthology</title>
-<link rel = "stylesheet"
-   type = "text/css"
-   href = "style.css" />
+<link rel = "stylesheet" type = "text/css" href = "style.css" />
+
 </head>
 <body>
 
 <div class="navbar">
- <a href="" class="menu"></a>
- <a href="" class="home"></a>
+ <div class="menu" onmouseover="showselection()"></div>
+ <a href="#" class="home"></a>
  
 </div>
-<div class="selection">
-  </div>
+<div class="q"></div>
 <div class="title">
 
 </div>
 <div class="titban">
-<img src="afghan.jpg">
+<img src="img/afghan.jpg">
  <p class="title">Afghanistan</p>
  <p class="subtit">An Anthology</p>
   
   </div>
-<p> Filler textdjkfkdkkfjfjfkfjjjbfjfjdd
+<p> Filler text</p>
+  <p> more filler</p>
+  <p>just some more filler</p>
+  <p>
+  djkfkdkkfjfjfkfjjjbfjfjdd
   dkdkdkdkdkdkdkkdfjfjf.f
   
   fjfjfkfkf
@@ -248,24 +248,5 @@
 
 
 </body>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var head = document.getElementById("head");
-
-// Get the offset position of the navbar
-var sticky = head.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    head.classList.add("sticky");
-  } else {
-    head.classList.remove("sticky");
-  }
-})
-</script>
+<script src="script.js"></script>
 </html>

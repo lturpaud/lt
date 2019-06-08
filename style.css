@@ -25,6 +25,10 @@ body {
 .menu {
   background-image:url(img/menu.png);
   position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100px;
 }
 .home {
   background-image:url(img/home.png);

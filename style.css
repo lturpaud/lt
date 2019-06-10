@@ -8,29 +8,11 @@ body {
   position: fixed;
   top: 0px;
   background-color: rgba(0,0,0,0);
+  z-index: 2;
 }
 
-.navbarscroll (
+/*.navbarscroll {
   background-color: rgba(255,255,255,1);
-)
-
-.q {
-  /*display: none;*/
-  position:absolute;
-  top: 78px;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
-/*.menu:hover + selection {
-  display: none;
-  position:absolute;
-  top: 78px;
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  display:block;
 }*/
 
 .menu {
@@ -41,12 +23,49 @@ body {
   height:100%;
   width: 100px;
 }
+
 .home {
   background-image:url(img/home.png);
   position: absolute;
+  top: 0;
+  left: 100px;
+  height:100%;
+  width: 100px;
   
 }
 
+.selection {
+  display: none;
+  position:fixed;
+  top: 78px;
+  width: 100px;
+  /*height: 100px;*/
+  background-color: white;
+}
+
+.selectionopen {
+  animation-name: openselection;
+  animation-duration: 1s;
+}
+
+.selectionclose {
+  animation-name: closeselection;
+  animation-duration: 1s;
+}
+
+@keyframes openselection {
+  from {height: 0px;}
+  to {height: 100px;}
+}
+
+@keyframes closeselection {
+  from {height: 100px;}
+  to {height: 0px;}
+}
+
+.titban {
+  z-index:0;
+}
   
 .sticky {
   position: fixed;
@@ -58,7 +77,17 @@ body {
   background-color: rgba(0,0,0,0);
   z-index: 1;
   color: black; 
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  font-size: 40pt;
 }
 
-
-Attachments area
+.subtit {
+  background-color: rgba(0,0,0,0);
+  z-index: 1;
+  color: black; 
+  position: absolute;
+  top: 54%;
+  left: 47%;
+}

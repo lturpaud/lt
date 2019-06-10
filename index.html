@@ -3,25 +3,30 @@
 <head>
 <title>anthology</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
-
+<script src="script.js"></script>
 </head>
 <body>
 
 <div class="navbar">
- <div class="menu" onmouseover="showselection()"></div>
- <a href="#" class="home"></a>
+ <div class="menu" onmouseover="showselection()" onmouseout="hideselection()" onclick="showselection1()"></div>
+ <div class="home"><a href="#"></a></div>
  
 </div>
-<div class="q"></div>
-<div class="title">
-
+<div class="selection" id="sel" onmouseout="hideselection2()">
+<div class="abtdever"><a href="about-the-developer/about-the-developer.html">About the Developer</a></div>
+<div class="anthlink">The Anthology</div>
+<div class="bibli">Bibliography</div>
 </div>
-<div class="titban">
-<img src="img/afghan.jpg">
+
+<div id="mousebox" onmouseout="hideselection1()" style="background-color: rgba(0,0,0,0); z-index: -10; position:fixed; top: 0; left: 0; width: 25%; height: 150px;"></div>
+
+<div class="titban" id="titbann">
+<img src="img/afghanistan_mountains_helicopter_ride.jpg" style="max-width: 100%; height: auto;">
  <p class="title">Afghanistan</p>
  <p class="subtit">An Anthology</p>
   
-  </div>
+  </div>   
+
 <p> Filler text</p>
   <p> more filler</p>
   <p>just some more filler</p>
@@ -246,7 +251,6 @@
     ekkekeisieirjfjfifi></p>
 
 
-
 </body>
-<script src="script.js"></script>
+
 </html>

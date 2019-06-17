@@ -11,12 +11,12 @@ body {
   z-index: 2;
 }
 
-/*.navbarscroll {
+.navbarscroll {
   background-color: rgba(255,255,255,1);
-}*/
+}
   
 .menuicon {
-    background-image:url(/img/menu.png);
+    background-image:url(img/menu.png);
     position: absolute;
     top: 0;
     left: 0;
@@ -25,43 +25,48 @@ body {
     list-style-type: none;
 }
 
-.navbar ul{
+.menu ul{
     position: absolute;
     left: 0;
     top: 78px;
     margin-top: 0;
     padding-left: 0;
     list-style-type: none;
-    box-shadow: 3px 3px 4px #303030;
-    height: 320px;
-    width: 20%;
-	
+    box-shadow: 3px 3px 4px #3b3b3f;
+    width: 15%;
+	  height: auto;	
 }
 
-.menu:hover .menu ul li{
-    display: block;
-}
-
-.navbar ul li{
+.menu ul li{
     padding: 10px 5px;
     background: white;
     display: none;
 }
 
-.navbar ul li a {
+.menu:hover li{
+    display: block;
+    animation: openmenu 1.5s forwards;
+}
+
+.menu ul li a{
 	text-decoration: none;
 	color: black;
 	font-size: 12pt;
 }
 
-.navbar ul li:hover {
-	background-color: black;
+.menu ul li:hover {
+	background-color: #e4e4e4;
+}	
+
+@keyframes openmenu {
+  from {height: 0%;}
+  to {height: 100%;}
 }
 
-.navbar ul li:hover a{
-	color:white;
+@keyframes closemenu {
+  from {height: 100%;}
+  to {height: 0%;}
 }
-
 
 .home {
   background-image:url(img/home.png);
@@ -92,15 +97,8 @@ body {
   animation-duration: 1s;
 }
 
-@keyframes openselection {
-  from {height: 0px;}
-  to {height: 100px;}
-}
 
-@keyframes closeselection {
-  from {height: 100px;}
-  to {height: 0px;}
-}
+
 
 .titban {
   z-index:0;

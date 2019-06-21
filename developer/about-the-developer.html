@@ -2,36 +2,43 @@
 <html>
 <head>
 <title>anthology</title>
-<link rel = "stylesheet" type = "text/css" href = "style.css" />
+<link rel = "stylesheet" type = "text/css" href = "../style.css" />
+<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 <script src="script.js"></script>
 </head>
 <body>
 
-<div class="navbar">
- <div class="menu" onmouseover="showselection()" onmouseout="hideselection()" onclick="showselection1()"></div>
- <div class="home"><a href="#"></a></div>
- <div class="afghanflag"></div>
- <div class="afghanistan" id="afghanistan">Afghanistan</div>
+<div class="navbar" id="navvbar">
+ <div class="menu">
+ <div class="menuicon"></div>
+ <ul class="a">
+    <li onClick="parent.location='../developer/about-the-developer.html'"><a href="../developer/about-the-developer.html">About the Developer</a></li>
+    <li onClick="parent.location='../bibliography/sources.html'"><a href="../bibliography/sources.html">Bibliography</a></li>
+    <li onClick="parent.location='../theanth.html'"><a href="../theanth.html">The Anthology</a></li>
+ </ul>
+ </div>
+ <div class="home" onClick="parent.location='../index.html'"><a href="../index.html"></a></div>
 </div>
-<div class="selection" id="sel">
-<div class="abtdever"><a href="about-the-developer/about-the-developer.html">About the Developer</a></div>
-<div class="anthlink">The Anthology</div>
-<div class="bibli">Bibliography</div>
-</div>
+
 
 <div id="mousebox" onmouseout="hideselection1()" style="background-color: rgba(0,0,0,0); z-index: -10; position:fixed; top: 0; left: 0; width: 25%; height: 150px;"></div>
 
 <div class="titban" id="titbann">
-<img src="img/afghanistan_mountains_helicopter_ride.jpg" style="max-width: 100%; height: auto;">
-    <p>About the Developer</p>
+<img src="../img/wakhan-cover-1-1600x862.jpg" width="100%" height="auto">
+<div class="titcont">
+	<h1 class="title">About the Editor</h1>
+ </div>
 </div>
-<div class="devpic"><img src="../img/developer"></div>
-<div class="devblurb"><p>Lazarus Turpaud is a Sophormore at Garfield High School. He "enjoys" running
+<div class="devpic"><img src="../img/developer.jpg" width="20%" height="auto" style="margin-left: 10%"></div>
+<div class="bodytext">Lazarus Turpaud is a Sophormore at Garfield High School. He "enjoys" running
 cross country and track for Garfield High School. He also loves the outdoors; whether it is backpacking around
 Mt. St. Helens, or going on an easy hike just outside Seattle, he is outside almost every weekend of the summer.
 He also volunteers for the Washington Trails Association, helping them repair trails for everyone to enjoy.
 When he is not outside, he is practicing piano, or developing code. He is also bilingual in English and Chinese. He chose to create an 
 anthology of Afghan literature because he wanted to learn more 
-about Afghan culture hidden behind the war torn country.</div>
+about Afghan culture hidden behind the war-torn country.</p></div>
+
+<div id="bottom"></div>
+
 </body>
 </html>  

@@ -144,6 +144,17 @@ font-size: 27pt;
   text-align: center;
 }
 
+.anthnavcont {
+   display: table;
+}
+
+.anthnavcont ul li{
+   display: inline;
+   border: 2px solid black;
+	border-radius: 10%;
+}
+   
+
 .heading {
 	font-family: 'Lato', sans-serif;
 	margin-left: 10%;

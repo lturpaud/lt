@@ -27,6 +27,10 @@ body {
     width: 100px;
     list-style-type: none;
 }
+
+.menuicon:hover {
+	background-color: #F2F1EF;
+}
 .menu {
   float: left;
 }
@@ -83,6 +87,10 @@ body {
   left: 100px;
   height:100%;
   width: 100px;
+}
+
+.home:hover {
+	background-color: #F2F1EF;
 }
 
 .selection {
@@ -156,6 +164,17 @@ font-size: 27pt;
 p.cite {
   padding-left: 25px;
   text-indent: -25px;
+}
+
+#poetbook {
+	border: 2px solid black;
+	border-radius: 10%;
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+#poetbook:hover {
+	background-color: #a0d2ff;
 }
 
 #bottom {

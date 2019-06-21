@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #dff9fb;
 }
 
 .navbar {
@@ -12,7 +13,9 @@ body {
 }
 
 .navbarscroll {
-  background-color: rgba(255,255,255,1);
+  opacity: 1;
+    background-color: white;
+    box-shadow: 5px 4px 7px #f5a9af;
 }
   
 .menuicon {
@@ -23,6 +26,9 @@ body {
     height:100%;
     width: 100px;
     list-style-type: none;
+}
+.menu {
+  float: left;
 }
 
 .menu ul{
@@ -45,7 +51,8 @@ body {
 
 .menu:hover li{
     display: block;
-    animation: openmenu 1.5s forwards;
+    animation-name: openmenu;
+    animation-duration: 5s;
 }
 
 .menu ul li a{
@@ -70,12 +77,12 @@ body {
 
 .home {
   background-image:url(img/home.png);
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 100px;
   height:100%;
   width: 100px;
-  
 }
 
 .selection {
@@ -97,9 +104,6 @@ body {
   animation-duration: 1s;
 }
 
-
-
-
 .titban {
   z-index:0;
 }
@@ -110,21 +114,52 @@ body {
   width: 100%;
 }
 
-.title {
+.titcont {
   background-color: rgba(0,0,0,0);
   z-index: 1;
   color: black; 
   position: absolute;
-  top: 50%;
-  left: 47%;
-  font-size: 40pt;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 25pt;
 }
 
-.subtit {
+h2.subtit {
   background-color: rgba(0,0,0,0);
   z-index: 1;
-  color: black; 
   position: absolute;
-  top: 54%;
-  left: 47%;
+  color: black; 
+  width: 100%;
+top: 48%;
+font-size: 27pt;
+  text-align: center;
+}
+
+.heading {
+	font-family: 'Lato', sans-serif;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align:center;
+}
+
+
+.bodytext {
+  font-family: 'Karla', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 3px;
+  font-size: 13pt;
+  text-indent: 20px;
+}
+
+p.cite {
+  padding-left: 25px;
+  text-indent: -25px;
+}
+
+#bottom {
+  background-color: #ecf0f1;
+  height: 75px;
+  width: 100%;
 }

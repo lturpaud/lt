@@ -162,6 +162,9 @@ font-size: 27pt;
    text-align:center;
 }
    
+.anthnavcont ul li:hover {
+   background-color: #ffffff;
+}
 
 .heading {
 	font-family: 'Lato', sans-serif;

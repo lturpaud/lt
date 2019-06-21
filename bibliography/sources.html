@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel = "stylesheet" type = "text/css" href = "style.css" />
+<link rel = "stylesheet" type = "text/css" href = "../style.css" />
 <script src="script.js"></script>
 </head>
 <body>
 
-<div class="navbar">
- 
+<div class="navbar" id="navvbar">
  <div class="menu">
- <div class="menuicon" onmouseover="showselection()" onmouseout="hideselection()" onclick="showselection1()"></div>
- <a href="#">Menu</a>
- </div>
+ <div class="menuicon"></div>
  <ul class="a">
-    <li><a href="../developer/about-the-developer.html">About the Developer</a></li>
-    <li><a href="sources.html">Bibliography</a></li>
-    <li><a href="#">The Anthology</a></li>
+    <li onClick="parent.location='../developer/about-the-developer.html'"><a href="../eveloper/about-the-developer.html">About the Developer</a></li>
+    <li onClick="parent.location='../bibliography/sources.html'"><a href="../bibliography/sources.html">Bibliography</a></li>
+    <li onClick="parent.location='../theanth.html'"><a href="../theanth.html">The Anthology</a></li>
  </ul>
- <div class="home"><a href="../index.html"></a></div>
+ </div>
+ <div class="home" onClick="parent.location='../index.html'"></div>
 </div>
+
+
 
 <div class="titban" id="titbann">
 <img src="../img/bluemosque.jpg" style="width: 100%; height: auto;">
-<div id="title"><h2>Bibliography</h2></div>
+<div class="titcont">
+	<h1 class="title">Bibliography</h1>
+ </div>
 </div>
 
-<div class="cites">
-
-    <p class="cite">Ahmadi. “White House.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.</p>
-     <p class="cite">Hosseini, Khaled. <i>A Thousand Splendid Suns.</i> Bloomsbury Publishing Ltd., 2018.</p>
-      <p class="cite">Kamran, Mohammed Nabi. “O Afghan!” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.</p>
-       <p class="cite">Mutma’in, Abdul Hai. “Sunset.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.</p>
-        <p class="cite"><i>Osama.</i> Directed by Siddiq Barmak, Universal Artists, 20 May, 2003.</p>
-         <p class="cite">Rahmani, Rashed. 2011, Kabul.</p>
-          <p class="cite">Sulamal, Abdul Wakil. “Two Pashto Short Stories.” Translated by Noorullah Atal. <i>Asian Literature and Translation,</i> Atal, N., 2017, pp. 96-104.</p>
-           <p class="cite">Watnyar, Abdul Basir. “I Live in Flames.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.</p>
-            <p class="cite">Zawab, Ezatullah. “I tell this to bush.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.</p>
-             <p class="cite"></p>
-              <p class="cite"></p>
-               <p class="cite"></p>
-
+<div class="bodytext">
+    <p class="cite">Ahmadi. “White House.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.78</p>
+    <p class="cite">Hosseini, Khaled. <i>A Thousand Splendid Suns.</i> Bloomsbury Publishing Ltd., 2018.</p>
+    <p class="cite">Kamran, Mohammed Nabi. “O Afghan!” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.65</p>
+    <p class="cite">Mutma’in, Abdul Hai. “Sunset.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.103</p>
+    <p class="cite"><i>Osama.</i> Directed by Siddiq Barmak, Universal Artists, 20 May, 2003.</p>
+    <p class="cite">Rahmani, Rashed. 2011, Kabul.</p>
+    <p class="cite">Sulamal, Abdul Wakil. “Two Pashto Short Stories.” Translated by Noorullah Atal. <i>Asian Literature and Translation,</i> Atal, N., 2017, pp. 96-104.</p>
+    <p class="cite">Watnyar, Abdul Basir. “I Live in Flames.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.121</p>
+    <p class="cite">Zawab, Ezatullah. “I Tell This to Bush.” <i>Poetry of the Taliban,</i> edited by,  Hamid Stanikzai, Alex Strick van Linschoten, Felix Kuehn, 2012, pp.14</p>
 </div>
+
+<div id="bottom"></div>
 
 </body>
 </html>

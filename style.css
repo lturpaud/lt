@@ -93,6 +93,29 @@ body {
 	background-color: #F2F1EF;
 }
 
+#allahakbar {
+  width: 20%;
+  margin-left: 40%;
+  height: 100%;
+  font-size: 35pt;
+  text-align: center;
+  opacity: 0;
+}
+
+.allahscroll {
+  animation-name: closeallah;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes closeallah {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+
+}
+
 .selection {
   display: none;
   position:fixed;
